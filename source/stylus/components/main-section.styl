@@ -1,0 +1,110 @@
+.main-section
+  background-image: url('../images/main-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color #D71D1C
+  position relative
+  z-index 1
+  &:after
+    content: ""
+    position: absolute
+    z-index -1
+    background-color $color-carbon
+    left: 0
+    width: 6px;
+    height: 73px;
+    top: 133px;
+    +above($breakpoints.sm)
+      width: 19px;
+      height: 156px;
+      top: 143px;
+    +above($breakpoints.md)
+      width: 25px;
+      height: 218px;
+      top: 175px;
+    +above($breakpoints.xxl)
+      width 56px
+      height: 271px
+      top: 216px
+
+  &__container
+    position relative
+    z-index 1
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      padding-bottom 30px
+    +above($breakpoints.md)
+      padding-bottom 50px
+    +above($breakpoints.xxl)
+      padding-bottom 94px
+
+  &__block-title
+    background-image: radial-gradient(circle at 100% 100%, transparent -1px, #ffffff -1px, #ffffff 1px, transparent 1px), linear-gradient(to right, #ffffff, #f1a4a3), radial-gradient(circle at 0% 100%, transparent -1px, #f1a4a3 -1px, #f1a4a3 1px, transparent 1px), linear-gradient(to bottom, #f1a4a3, #e45252), radial-gradient(circle at 0% 0%, transparent -1px, #e45252 -1px, #e45252 1px, transparent 1px), linear-gradient(to left, #e45252, #ffffff), radial-gradient(circle at 100% 0%, transparent -1px, #ffffff -1px, #ffffff 1px, transparent 1px), linear-gradient(to top, #ffffff, #ffffff);
+    background-size: 1px 1px, calc(100% - 2px) 2px, 1px 1px, 2px calc(100% - 2px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+    display: flex
+    flex-direction: column
+    gap: 10px
+    width 100%
+    padding 15px 1px
+    margin 20px 0 15px
+    +above($breakpoints.sm)
+      background-image: radial-gradient(circle at 100% 100%, transparent -2px, #ffffff -2px, #ffffff 1px, transparent 1px), linear-gradient(to right, #ffffff, #f1a4a3), radial-gradient(circle at 0% 100%, transparent -2px, #f1a4a3 -2px, #f1a4a3 1px, transparent 1px), linear-gradient(to bottom, #f1a4a3, #e45252), radial-gradient(circle at 0% 0%, transparent -2px, #e45252 -2px, #e45252 1px, transparent 1px), linear-gradient(to left, #e45252, #ffffff), radial-gradient(circle at 100% 0%, transparent -2px, #ffffff -2px, #ffffff 1px, transparent 1px), linear-gradient(to top, #ffffff, #ffffff);
+      background-size: 1px 1px, calc(100% - 2px) 3px, 1px 1px, 3px calc(100% - 2px);
+      gap: 13px
+      width 430px
+      padding 20px
+      margin 25px 0 30px
+    +above($breakpoints.md)
+      background-image: radial-gradient(circle at 100% 100%, transparent -3px, #ffffff -3px, #ffffff 1px, transparent 1px), linear-gradient(to right, #ffffff, #f1a4a3), radial-gradient(circle at 0% 100%, transparent -3px, #f1a4a3 -3px, #f1a4a3 1px, transparent 1px), linear-gradient(to bottom, #f1a4a3, #e45252), radial-gradient(circle at 0% 0%, transparent -3px, #e45252 -3px, #e45252 1px, transparent 1px), linear-gradient(to left, #e45252, #ffffff), radial-gradient(circle at 100% 0%, transparent -3px, #ffffff -3px, #ffffff 1px, transparent 1px), linear-gradient(to top, #ffffff, #ffffff);
+      background-size: 1px 1px, calc(100% - 2px) 4px, 1px 1px, 4px calc(100% - 2px);
+      gap: 17px
+      width 574px
+      padding 30px 35px
+      margin 50px 0 30px
+    +above($breakpoints.xxl)
+      background-image: radial-gradient(circle at 100% 100%, transparent -4px, #ffffff -4px, #ffffff 1px, transparent 1px), linear-gradient(to right, #ffffff, #f1a4a3), radial-gradient(circle at 0% 100%, transparent -4px, #f1a4a3 -4px, #f1a4a3 1px, transparent 1px), linear-gradient(to bottom, #f1a4a3, #e45252), radial-gradient(circle at 0% 0%, transparent -4px, #e45252 -4px, #e45252 1px, transparent 1px), linear-gradient(to left, #e45252, #ffffff), radial-gradient(circle at 100% 0%, transparent -4px, #ffffff -4px, #ffffff 1px, transparent 1px), linear-gradient(to top, #ffffff, #ffffff);
+      background-size: 1px 1px, calc(100% - 2px) 5px, 1px 1px, 5px calc(100% - 2px);
+      gap: 20px
+      width 680px
+      height: 335px
+      padding 35px 40px
+      margin 90px 0 34px
+
+  &__form
+    display: flex
+    flex-direction: column
+    gap: 8px
+    width 280px
+    margin 15px auto 0
+    +above($breakpoints.sm)
+      gap: 12px
+      width 220px
+      margin 0
+      margin-top 20px
+    +above($breakpoints.md)
+      gap: 14px
+      width 290px
+      margin-top 25px
+    +above($breakpoints.xxl)
+      gap: 17px
+      width 320px
+      margin-top 30px
+
+  &__img
+    width: 253px;
+    height: auto;
+    margin: 13px 0 0 2px;
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      bottom: 0;
+      width: 516px;
+      right: -16px;
+    +above($breakpoints.md)
+      width: 675px;
+    +above($breakpoints.xxl)
+      width 854px

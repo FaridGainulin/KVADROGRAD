@@ -1,0 +1,38 @@
+.footer
+
+  &__container
+    display: flex
+    align-items: center
+    flex-direction: column
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content space-between
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      flex-basis: 40%
+      display: block
+
+  &__logo
+    width 56px
+    height: auto
+    +above($breakpoints.sm)
+      width 70px
+    +above($breakpoints.md)
+      width 75px
+    +above($breakpoints.xxl)
+      width 82px
+
+  &__privacy-mobile
+    cursor pointer
+    text-decoration: underline
+    +above($breakpoints.sm)
+      display: none
+
+  &__call-me
+    +above($breakpoints.sm)
+      flex-basis: 40%
+      display: flex
+      justify-content flex-end

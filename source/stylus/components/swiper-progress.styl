@@ -1,0 +1,25 @@
+.bullet-pagination
+  display: flex
+  flex-direction: row
+  justify-content center
+  align-items: center
+  gap: 5px
+  margin 15px 0
+  +above($breakpoints.sm)
+    display: none
+  &--left
+    justify-content start
+  &--right
+    justify-content flex-end
+
+  .swiper-pagination-bullet
+    background-color $color-bullet
+    width: 15px
+    height: 3px
+    border-radius: 0
+    opacity: 1
+    position relative
+  .swiper-pagination-bullet-active
+    transform: scale(1.2)
+    transition transform 0.5s
+    background-color: $color-bullet-active

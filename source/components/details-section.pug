@@ -1,0 +1,65 @@
+section.details-section
+  .wrapper
+    .details-section__container
+      .details-section__block
+        .details-section__block-left
+          .details-section__img-wrapper
+            img.details-section__img(src="images/details-section-img.png" loading="lazy" width="550" height="489" alt="image")
+          .details-section__text.font-s-30
+            span.font-w-semi-bold
+              | Будем рады ответить 
+              br.no-br
+              | на любой вопрос 
+            br
+            | о работе франшизы
+        .details-section__block-right
+          h2.details-section__title.font-w-semi-bold.font-s-48.text-up
+            | Агентство 
+            br.no-br
+            | недвижимости —
+          .details-section__sub-title.font-s-36
+            | бизнес, востребованный 
+            br
+            | в каждом городе России
+          .swiper-bullet
+            .details-section__cards.swiper-wrapper
+              .details-section__card.swiper-slide
+                .details-section__card-dot
+                .font-s-20
+                  | Согласно статистике, 
+                  span.font-w-semi-bold.color-red более 30% россиян 
+                  br.no-br
+                  span.font-w-semi-bold.color-red планируют покупку жилья 
+                  | в ближайшее 
+                  br.no-br
+                  | время, что говорит о росте спроса на услуги 
+                  br.no-br
+                  | агентств недвижимости
+              .details-section__card.swiper-slide
+                .details-section__card-dot
+                .font-s-20
+                  | Запустив бизнес по нашей франшизе, вы 
+                  br.no-br
+                  | сможете легко развить его в любом городе 
+                  br.no-br
+                  | России и быстро выделиться на конкурентном 
+                  br.no-br
+                  | рынке
+              .details-section__card.swiper-slide
+                .details-section__card-dot
+                .font-s-20
+                  | Мы передадим вам нашу бизнес-модель, 
+                  br.no-br
+                  | поможем правильно организовать все 
+                  br.no-br
+                  | процессы агентства и выйти на чистую 
+                  br.no-br
+                  | прибыль сразу после открытия
+            .bullet-pagination
+          form.details-section__form(data-feedback-form)
+            input.input(type="text" name="answer" autocomplete="off" placeholder="Текст вопроса")
+            .details-section__input-group
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+              input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn(type="submit") Задать вопрос

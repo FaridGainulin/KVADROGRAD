@@ -1,0 +1,47 @@
+section.calculation-section
+  .wrapper
+    .calculation-section__container
+      h2.calculation-section__title.font-w-semi-bold.font-s-48.text-up
+        | Сколько вы будете 
+        br.no-br
+        | зарабатывать?
+      .calculation-section__block
+        .calculation-section__block-select
+          .calculation-section__text
+            .font-w-semi-bold.font-s-20.color-red 01.
+            .font-s-20 Выберите численность <br> населения вашего города:
+          .calculation-section__custom-select.custom-select
+            #select-header.calculation-section__select-header
+              span#selected-option.font-w-semi-bold.font-s-18 Выберите формат:
+              img.calculation-section__select-icon(src="images/select-icon.svg" loading="lazy" width="20" height="12" alt="icon")
+            ul#select-options.calculation-section__select-options.font-w-semi-bold.font-s-16.text-up
+              li(data-value="100000") до 100 тысяч жителей
+              li(data-value="500000") до 500 тысяч жителей
+              li(data-value="1000000") до 1 млн жителей
+              li(data-value="1000001") от 1 млн жителей
+        .calculation-section__block-text
+          .calculation-section__text
+            .font-w-semi-bold.font-s-20.color-red 02.
+            .font-s-20
+              | Перетащите бегунок и узнайте, какой будет 
+              br.no-br
+              | прибыль в течение двух лет
+        .calculation-section__block-bottom
+          .calculation-section__custom-range
+            .custom-range__track.calculation-section__custom-range-track
+              .custom-range__progress.calculation-section__custom-range-progress
+              .custom-range__thumb.calculation-section__custom-range-thumb
+          .calculation-section__months.font-w-light.font-s-16
+            span 3
+            span 6
+            span 9
+            span 12
+            span 15
+            span 18
+            span 21
+            span 24
+          .calculation-section__block-result
+            .font-w-semi-bold.font-s-40 Результат:
+            .calculation-section__block-sum.font-w-semi-bold.font-s-40.color-red
+              span#result 0
+              span  ₽

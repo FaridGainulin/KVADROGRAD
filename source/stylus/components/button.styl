@@ -1,0 +1,85 @@
+.btn
+  height: 45px
+  width 100%
+  user-select: none
+  position: relative
+  display: flex;
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  color: #fff
+  border-radius: 8px
+  background: radial-gradient(101.72% 101.72% at 43.91% 0%, #303030 43.06%, #0b0a0a 100%);
+  box-shadow: 0 4px 0 0 rgba(115, 53, 53, 1), 0 5px 33px 0 rgba(242, 34, 34, 0.3);
+  text-transform: uppercase
+  font-family: 'Montserrat-SemiBold'
+  font-weight: 700
+  font-size: 15px
+  line-height: 110%
+  transition transform 0.5s, top 0.8s
+  +above($breakpoints.sm)
+    box-shadow: 0 4px 0 0 rgba(115, 53, 53, 1), 0 15px 33px 0 rgba(242, 34, 34, 0.3);
+    border-radius: 10px
+    font-size: 14px;
+    height: 50px;
+  +above($breakpoints.md)
+    box-shadow: 0 4px 0 0 rgba(115, 53, 53, 1), 0 20px 33px 0 rgba(242, 34, 34, 0.3);
+    border-radius: 12px
+    font-size: 15px;
+    height: 63px;
+  +above($breakpoints.xxl)
+    box-shadow: 0 4px 0 0 rgba(115, 53, 53, 1), 0 30px 33px 0 rgba(242, 34, 34, 0.3);
+    border-radius: 15px
+    font-size: 16px;
+    height: 75px
+
+  &:hover
+    transform: scale(1.02)
+
+  &:active
+    top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation
+      0%
+          left: -150%
+      100% 
+          left: 250%
+
+
+  &--call-me
+    cursor pointer
+    text-transform: unset
+    box-shadow: 0 2px 0 0 #3d3d3d95, 0 5px 25px 0 rgba(242, 34, 34, 0.3);
+    background: radial-gradient(101.72% 101.72% at 43.91% 0%, #303030 65.06%, #0b0a0a 100%);
+    font-family: 'Montserrat-Medium'
+    font-weight: 500
+    font-size: 10px
+    height: 25px
+    width 120px
+    +above($breakpoints.sm)
+      box-shadow: 0 2px 0 0 #3d3d3d95, 0 5px 25px 0 rgba(242, 34, 34, 0.3);
+      font-size: 10px;
+      height: 30px;
+      width 130px
+    +above($breakpoints.md)
+      box-shadow: 0 2px 0 0 #3d3d3d95, 0 5px 25px 0 rgba(242, 34, 34, 0.3);
+      font-size: 11px;
+      height: 35px;
+      width 140px
+    +above($breakpoints.xxl)
+      box-shadow: 0 2px 0 0 #3d3d3d95, 0 5px 25px 0 rgba(242, 34, 34, 0.3);
+      font-size: 12px;
+      height: 40px
+      width 150px
